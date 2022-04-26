@@ -1,36 +1,48 @@
-export function fadeIn(el) {
+export function fadeIn(el, timeout) {
+  if (timeout === undefined) {
+    timeout = 500
+  }
   el.classList.remove("fadeOut");
   setTimeout(function () {
     el.classList.remove("d-none");
     el.classList.add("showElement");
     setTimeout(function () {
       el.classList.add("fadeIn");
-    }, 500);
-  }, 500);
+    }, timeout);
+  }, timeout);
 };
-export function fadeOut (el) {
+export function fadeOut(el, timeout) {
+  if (timeout === undefined) {
+    timeout = 500;
+  }
   el.classList.remove("fadeIn");
   el.classList.add("fadeOut");
   setTimeout(function () {
     el.classList.add("d-none");
     el.classList.remove("showElement");
-  }, 500);
+  }, timeout);
 };
-window.fadeIn = function (el) {
+window.fadeIn = function (el, timeout) {
+  if (timeout === undefined) {
+    timeout = 500;
+  }
   el.classList.remove("fadeOut");
   setTimeout(function () {
     el.classList.remove("d-none");
     el.classList.add("showElement");
     setTimeout(function () {
       el.classList.add("fadeIn");
-    }, 500);
-  }, 500);
+    }, timeout);
+  }, timeout);
 };
-window.fadeOut = function (el) {
+window.fadeOut = function (el, timeout) {
+  if (timeout === undefined) {
+    timeout = 500;
+  }
   el.classList.remove("fadeIn");
   el.classList.add("fadeOut");
   setTimeout(function () {
     el.classList.add("d-none");
     el.classList.remove("showElement");
-  }, 500);
+  }, timeout);
 };
