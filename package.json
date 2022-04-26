@@ -1,6 +1,6 @@
 {
   "name": "fade-animations",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A small library for easy fade in fade in and fade out effects.",
   "main": "dist/index.min.js",
   "scripts": {
