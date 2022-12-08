@@ -1,4 +1,5 @@
 ![npm](https://img.shields.io/npm/v/fade-animations)
+[![Release new version to NPMJS](https://github.com/kylescudder/fade-animations/actions/workflows/publish.yml/badge.svg)](https://github.com/kylescudder/fade-animations/actions/workflows/publish.yml)
 
 # fade-animations
 A small library for easy fade in fade in and fade out effects.
